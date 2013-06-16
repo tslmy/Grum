@@ -1,4 +1,4 @@
-Grum: _convert __G__oogle __R__eader __u__nread articles to __M__arkdown text files!_
+Grsm: convert Google Reader starred items to Markdown files!
 =============
 
 usage
@@ -8,17 +8,22 @@ _(You may also want to edit some account information in it to simplify personal 
 
 author
 ------
-[tslmy](http://tslmy.tk).
+[tslmy](http://tslimi.tk).
 
 LICENSE? Not important.
 
 file list
 ---------
-1. feedparser.py2. html2text.py3. reader.py
-As the program runs, the following file will be generated. Relax, they are simply caches. Harmless.
-1. html2text.pyc
+1. feedparser.py
+2. html2text.py
+3. reader.py
+
+As the program runs, the following file will be generated. Relax, they are simply caches. Harmless.
+
+1. html2text.pyc
 2. reader.pyc
-credits
+
+credits
 -------
 ###[html2text](https://github.com/aaronsw/html2text/)
 
