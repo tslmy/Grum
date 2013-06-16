@@ -28,10 +28,7 @@ f = urlopen(request)
 lines = f.read().split()
 auth = lines[2][5:]
 headers = {'Authorization': 'GoogleLogin auth=' + auth}
-# request = Request('https://www.google.com/reader/api/0/subscription/list?output=json', headers=headers)
-# f = urlopen(request)
-# subscription_list = f.read()
-request = Request('https://www.google.com/reader/atom/user/-/state/com.google/reading-list?n='+str(ENTRY_AMOUNT)+'&xt=user/-/state/com.google/read', headers=headers)
+request = Request('https://www.google.com/reader/atom/user/-/state/com.google/starred-list?n='+str(ENTRY_AMOUNT), headers=headers)
 #Use "-" to replace the USER_ID, and Google will replace "-" according to the user that the header described.
 f = urlopen(request)
 atom = f.read()
