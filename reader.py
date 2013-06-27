@@ -6,7 +6,7 @@ ENTRY_AMOUNT = 20             #(Optional)Amount of the entries you would like me
 from urllib import urlencode
 from urllib2 import urlopen, Request
 import feedparser, html2text #under the same folder
-not_for_filename=[u'\\',u'/',u':',u'*',u'?',u'”',u'<',u'>',u'|']
+not_for_filename=[u'\\',u'/',u':',u'*',u'?',u'"',u'<',u'>',u'|']
 def standardize_file_name(original_filename):
 	filename=original_filename
 	for character in not_for_filename:
